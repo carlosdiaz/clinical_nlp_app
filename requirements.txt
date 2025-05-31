@@ -1,0 +1,8 @@
+flask
+pymongo
+python-dotenv
+openai
+pdfminer.six
+langchain
+pymupdf
+flask-cors>=4.0.0

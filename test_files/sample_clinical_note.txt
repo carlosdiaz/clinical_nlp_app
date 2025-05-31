@@ -1,0 +1,31 @@
+
+Patient Name: John Doe
+DOB: 01/01/1970
+
+Chief Complaint:
+Shortness of breath and chest pain for the past 3 days.
+
+History of Present Illness:
+John is a 54-year-old male with a known history of hypertension and type 2 diabetes. He reports increasing shortness of breath and intermittent chest pain, especially after exertion. No recent trauma. No fever. No cough or wheezing. Denies recent travel or exposure to sick contacts.
+
+Past Medical History:
+- Hypertension
+- Type 2 Diabetes
+- Hyperlipidemia
+
+Medications:
+- Lisinopril 20mg daily
+- Metformin 1000mg twice daily
+- Atorvastatin 40mg nightly
+
+Physical Exam:
+BP: 148/92, HR: 88, RR: 18, Temp: 98.6°F, SpO2: 96% RA
+Chest: Clear to auscultation bilaterally.
+Cardiac: Regular rate and rhythm, no murmurs.
+Extremities: No edema.
+
+Assessment/Plan:
+1. Suspected stable angina.
+2. Rule out acute coronary syndrome.
+3. Continue current medications.
+4. Refer to cardiology for stress test.

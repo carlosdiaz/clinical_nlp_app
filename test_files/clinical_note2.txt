@@ -1,0 +1,28 @@
+Patient Name: Marcus Alvarez
+DOB: 07/14/1992
+
+Chief Complaint:
+Severe abdominal pain localized to the right lower quadrant.
+
+History of Present Illness:
+Marcus is a 32-year-old male with sudden onset abdominal pain that began approximately 12 hours ago. The pain has increased in intensity, is sharp, and is now localized to the right lower quadrant. Associated symptoms include nausea and one episode of vomiting. No bowel movement since yesterday. Denies diarrhea or fever.
+
+Past Medical History:
+- No known chronic conditions
+
+Medications:
+- None
+
+Physical Exam:
+BP: 122/78, HR: 94, Temp: 100.3°F, SpO2: 98% RA
+Abdomen: Tenderness to palpation in RLQ with guarding and rebound
+Positive McBurney's point tenderness
+
+Assessment/Plan:
+1. Rule out acute appendicitis.
+2. Order abdominal ultrasound and CBC.
+3. NPO status, IV fluids started.
+4. Consult general surgery.
+
+Impression:
+Likely acute appendicitis.

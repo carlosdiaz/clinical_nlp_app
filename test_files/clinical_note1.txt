@@ -1,0 +1,27 @@
+Patient Name: Linda Thompson
+DOB: 03/25/1958
+
+Chief Complaint:
+Persistent cough and shortness of breath.
+
+History of Present Illness:
+Linda is a 66-year-old female who presents with a 3-month history of chronic cough, progressive dyspnea, and wheezing. She reports increased fatigue and occasional chest tightness, especially in the mornings. She has a 40-pack-year smoking history and quit smoking two years ago.
+
+Past Medical History:
+- Chronic bronchitis
+- Hypertension
+
+Medications:
+- Albuterol inhaler as needed
+- Hydrochlorothiazide 25mg daily
+
+Physical Exam:
+BP: 130/80, HR: 84, RR: 20, Temp: 99.1°F, SpO2: 93% RA
+Chest: Decreased breath sounds, scattered wheezes bilaterally
+Cardiac: Normal S1/S2, no murmurs
+
+Assessment/Plan:
+1. Suspected chronic obstructive pulmonary disease (COPD).
+2. Order pulmonary function test.
+3. Start tiotropium once daily.
+4. Refer to pulmonology.
