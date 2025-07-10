@@ -6,7 +6,6 @@ from bson.objectid import ObjectId
 
 from app.services.text_extractor import extract_text
 from app.services.summarizer import summarize_text
-# from app.services.diagnosis_predictor import predict_diseases
 from app.services.diagnosis_predictor import predict_diagnosis
 import uuid
 
@@ -22,7 +21,10 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @api.route("/upload", methods=["POST", "OPTIONS"])
 def upload_file():
-    from gtts import gTTS
+    """
+    This is the endpoint to upload the file
+    :return:
+    """
     if request.method == "OPTIONS":
         return '', 200
 
@@ -43,24 +45,6 @@ def upload_file():
         print(f'text extracted {text}')
         summary = summarize_text(text)
         print(f'The diseases are {diseases}')
-
-        # Generate a pdf file with the content
-        # tts = gTTS("Hello, this is a test.")
-        # filepath = "output.mp3"
-        # tts.save(filepath)
-        #
-        # document = {
-        #     'filename': filename,
-        #     'text': text,
-        #     'summary': summary,
-        #     'diseases': diseases
-        # }
-        #
-        # result = collection.insert_one(document)
-        # print('Record inserted')
-
-        # return send_file(filepath, mimetype="audio/mpeg")
-
         return jsonify({
             "diseases": diseases,
             "summary": summary,

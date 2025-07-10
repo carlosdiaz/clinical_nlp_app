@@ -6,15 +6,16 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def query_llm(prompt):
     """
-    Simple wrapper to call the OpenAI GPT-4 model.
+    Wrapper to call the OpenAI GPT-4 model.
+    Not being used
+    :param prompt:
+    :return:
     """
     try:
-        print('query_llm')
         response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[{"role": "user", "content": prompt}]
         )
-        print(response)
         return response['choices'][0]['message']['content']
 
     except Exception as e:
@@ -22,6 +23,11 @@ def query_llm(prompt):
 
 
 def analyze_text(text):
+    """
+
+    :param text:
+    :return:
+    """
     print('analyze_text')
     prompt = f"""Summarize the following clinical note and list potential diseases or diagnoses mentioned or implied:
 

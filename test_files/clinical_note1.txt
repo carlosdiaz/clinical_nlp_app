@@ -5,7 +5,9 @@ Chief Complaint:
 Persistent cough and shortness of breath.
 
 History of Present Illness:
-Linda is a 66-year-old female who presents with a 3-month history of chronic cough, progressive dyspnea, and wheezing. She reports increased fatigue and occasional chest tightness, especially in the mornings. She has a 40-pack-year smoking history and quit smoking two years ago.
+Linda is a 66-year-old female who presents with a 3-month history of chronic cough, progressive dyspnea, and wheezing.
+She reports increased fatigue and occasional chest tightness, especially in the mornings.
+She has a 40-pack-year smoking history and quit smoking two years ago.
 
 Past Medical History:
 - Chronic bronchitis
