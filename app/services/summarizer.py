@@ -11,8 +11,8 @@ def summarize_text(text: str) -> str:
     response = client.chat.completions.create(
         model="gpt-4",  # or 'gpt-3.5-turbo' if you're using that instead
         messages=[
-            {"role": "system", "content": "You are a clinical note summarizer."},
-            {"role": "user", "content": f"Summarize the following clinical note:\n\n{text}"}
+            {"role": "system", "content": "You are a physician and a clinical note summarizer."},
+            {"role": "user", "content": f"Summarize the following clinical note providing clinical context:\n\n{text}"}
         ],
         temperature=0.5
     )

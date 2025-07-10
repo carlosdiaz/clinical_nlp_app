@@ -7,7 +7,11 @@ UPLOAD_FOLDER = "uploaded_files"
 
 
 def save_file(file_storage):
-    """Save the uploaded file to disk and return the file path."""
+    """
+    Saving the file to disk and return the file path
+    :param file_storage:
+    :return:
+    """
     if not os.path.exists(UPLOAD_FOLDER):
         os.makedirs(UPLOAD_FOLDER)
 

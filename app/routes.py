@@ -1,5 +1,5 @@
 import os
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, send_file
 from werkzeug.utils import secure_filename
 from pymongo import MongoClient
 from bson.objectid import ObjectId
@@ -22,6 +22,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @api.route("/upload", methods=["POST", "OPTIONS"])
 def upload_file():
+    from gtts import gTTS
     if request.method == "OPTIONS":
         return '', 200
 
@@ -37,25 +38,34 @@ def upload_file():
     filepath = os.path.join(UPLOAD_FOLDER, unique_filename)
     file.save(filepath)
 
-    # Example response - you would trigger NLP analysis here
     try:
         text = extract_text(file)
         print(f'text extracted {text}')
         summary = summarize_text(text)
-        print(f'summary {summary}')
-        diseases = predict_diagnosis(text)
         print(f'The diseases are {diseases}')
 
-        document = {
-            'filename': filename,
-            'text': text,
-            'summary': summary,
-            'diseases': diseases
-        }
+        # Generate a pdf file with the content
+        # tts = gTTS("Hello, this is a test.")
+        # filepath = "output.mp3"
+        # tts.save(filepath)
+        #
+        # document = {
+        #     'filename': filename,
+        #     'text': text,
+        #     'summary': summary,
+        #     'diseases': diseases
+        # }
+        #
+        # result = collection.insert_one(document)
+        # print('Record inserted')
 
-        result = collection.insert_one(document)
+        # return send_file(filepath, mimetype="audio/mpeg")
 
-        return jsonify({'message': 'File processed and saved'}), 200
+        return jsonify({
+            "diseases": diseases,
+            "summary": summary,
+        }), 200
+
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
