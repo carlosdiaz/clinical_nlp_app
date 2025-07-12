@@ -44,6 +44,7 @@ def upload_file():
         text = extract_text(file)
         print(f'text extracted {text}')
         summary = summarize_text(text)
+        diseases = predict_diagnosis(text)
         print(f'The diseases are {diseases}')
         return jsonify({
             "diseases": diseases,
