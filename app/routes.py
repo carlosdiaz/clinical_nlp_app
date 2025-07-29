@@ -71,3 +71,18 @@ def get_document(doc_id):
 @api.route("/ping", methods=["GET"])
 def ping():
     return jsonify({"message": "pong"}), 200
+
+
+@api.route('/login', methods=['POST'])
+def login():
+
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+    valid_username = os.getenv("VALID_USERNAME")
+    valid_password = os.getenv("VALID_PASSWORD")
+
+    if username == valid_username and password == valid_password:
+        return jsonify({"message": "Login successful!"}), 200
+    else:
+        return jsonify({"message": "Invalid username or password"}), 401
